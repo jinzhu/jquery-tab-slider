@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Test</title>
+  </head>
+
+  <body>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./jquery.tabslider.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+      .current {
+        color: red;
+      }
+    </style>
+
+    <div class="tab_slideshow">
+      <ul class="switcher">
+        <li tabslider-ref="type">Type</li>
+        <li tabslider-ref="list">List</li>
+        <li tabslider-ref="cool">Cool</li>
+      </ul>
+      <ul tabslider-name="type">
+        <li>Type1</li>
+        <li>Type2</li>
+        <li>Type3</li>
+        <li>Type4</li>
+      </ul>
+      <div class="navigation" tabslider-name="list">
+        <span>List1</span>
+        <span>List2</span>
+        <span>List3</span>
+        <span>List4</span>
+      </div>
+      <div class="navigation" tabslider-name="cool">
+        <span>Coooool 1</span>
+        <span>Coooool 2</span>
+        <span>Coooool 3</span>
+        <span>Coooool 4</span>
+      </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8">
+      $(".tab_slideshow").tabSlider();
+    </script>
+  </body>
+</html>
